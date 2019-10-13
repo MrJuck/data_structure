@@ -1,3 +1,1 @@
 ## List
-
-[a](./Array.java)

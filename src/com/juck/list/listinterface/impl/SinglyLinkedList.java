@@ -40,9 +40,7 @@ public class SinglyLinkedList<E> implements List<E> {
     @Override
     public E remove(E e) {
         E value = null;
-        if (size == 0 || Objects.isNull(head)) {
-            return value;
-        }
+        checkBoud();
 
         if (Objects.equals(head.item, e)) {
             value = head.item;
@@ -66,7 +64,22 @@ public class SinglyLinkedList<E> implements List<E> {
 
     @Override
     public boolean contains(E e) {
-        return true;
+        checkBoud();
+
+        if (Objects.equals(head.item, e)) {
+            return true;
+        }
+
+        Node<E> current = head;
+        while(Objects.nonNull(current.next)) {
+            if (Objects.equals(current.next.item, e)) {
+                return true;
+            }
+
+            current = current.next;
+        }
+
+        return false;
     }
 
     @Override
@@ -77,6 +90,12 @@ public class SinglyLinkedList<E> implements List<E> {
             current = current.next;
         }
         System.err.println("NULL");
+    }
+
+    private void checkBoud() {
+        if (size == 0 || Objects.isNull(head)) {
+            throw new IndexOutOfBoundsException();
+        }
     }
 
     private static class Node<E> {

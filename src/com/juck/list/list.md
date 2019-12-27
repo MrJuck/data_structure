@@ -65,6 +65,12 @@ public class SinglyLinkedList<E> implements List<E> {
 
     void print();
     
+    private void checkBoud() {
+        if (size == 0 || Objects.isNull(head)) {
+            throw new IndexOutOfBoundsException();
+        }
+    }
+    
     private static class Node<E> {
         private E item;
         private Node<E> next;
@@ -110,9 +116,7 @@ public boolean add(E e) {
 @Override
 public E remove(E e) {
     E value = null;
-    if (size == 0 || Objects.isNull(head)) { // 边界判断
-        return value;
-    }
+    checkBoud(); // 边界判断
 
     if (Objects.equals(head.item, e)) { // 删除头节点
         value = head.item;

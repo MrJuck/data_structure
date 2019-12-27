@@ -13,7 +13,9 @@ public class Entry {
         list.add(4);
 
         System.err.println(list.remove(13));
-
+        System.err.println(list.remove(1));
+        System.err.println(list.contains(1));
+        System.err.println(list.contains(2));
         list.print();
     }
 }

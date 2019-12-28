@@ -16,7 +16,7 @@
 
 * 只有一个节点:  `head != null && head.next = head` 。
 
-  ![头节点](./resources/head.png)
+  ![head](./resources/head.png)
 
 * 有N个节点: 每个节点的 `next` 都指向下一个节点， 最后一个节点的 `next` 指向头节点。
 
@@ -101,7 +101,7 @@ public class singlyCircularLinkedList<E> implements List<E> {
 
 * 链表不为空， 如下图， 找到最后一个节点 `A` 将`A.next` 指向待插入的 `newNode` 。
 
-  ![](./resources/addNode.png)
+  ![addNode](./resources/addNode.png)
 
 ```java
 @Override
@@ -139,11 +139,11 @@ public boolean add(E e) {
 
 * 链表有N个节点，删除头节点：遍历链表， 找到 `current.next == head` ,将 `current.next = head.next` 即完成删除头节点， **然后记得移动头节点 `head = head.next`** 。如果不移动的话， `head` 依然在链表中。
 
-  ![](./resources/delHead.png)
+  ![delHead](./resources/delHead.png)
 
 * 链表有N个节点， 删除中间节点： 遍历链表， 找到 `current.next == delNode` ,将 `current.next = delNode.next` 即完成删除头节点
 
-  ![](./resources/delNode.png)
+  ![delNode](./resources/delNode.png)
 
   ```java
   @Override

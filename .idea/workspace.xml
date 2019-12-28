@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e88d8e68-1acf-4dec-b89d-46245c75e75f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/juck/list/listinterface/impl/singlyCircularLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/juck/list/resources/addNode.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/juck/list/resources/delHead.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/juck/list/resources/delNode.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/juck/list/resources/head.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/juck/list/resources/singlyCircularLinkedList.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/juck/list/singlyCircularLinkedList.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/juck/list/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/juck/list/Entry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/juck/list/list.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/juck/list/singlyLinkedList.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/juck/list/listinterface/impl/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/juck/list/listinterface/impl/SinglyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/juck/list/resources/addNode.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/juck/list/resources/addNode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/juck/list/singlyCircularLinkedList.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/juck/list/singlyCircularLinkedList.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/juck/sort/InsertSort.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,15 +47,15 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="java" value="54" />
-          <entry key="md" value="17" />
+          <entry key="java" value="57" />
+          <entry key="md" value="19" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="54" />
-          <entry key="Markdown" value="17" />
+          <entry key="JAVA" value="57" />
+          <entry key="Markdown" value="19" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="1" />
         </counts>
@@ -71,14 +63,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="14" />
-          <entry key="java" value="8469" />
-          <entry key="md" value="366" />
+          <entry key="java" value="9119" />
+          <entry key="md" value="392" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8469" />
-          <entry key="Markdown" value="366" />
+          <entry key="JAVA" value="9119" />
+          <entry key="Markdown" value="392" />
           <entry key="PLAIN_TEXT" value="14" />
         </counts>
       </usages-collector>
@@ -87,46 +79,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/juck/list/Entry.java">
+        <entry file="file://$PROJECT_DIR$/src/com/juck/sort/QuickSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/juck/list/listinterface/impl/SinglyLinkedList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/juck/list/listinterface/impl/singlyCircularLinkedList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="93" column="25" lean-forward="true" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/juck/list/listinterface/List.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" selection-start-line="2" selection-end-line="14" selection-end-column="1" />
+            <state relative-caret-position="342">
+              <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -175,6 +131,8 @@
         <option value="$PROJECT_DIR$/src/com/juck/list/listinterface/impl/SinglyLinkedList.java" />
         <option value="$PROJECT_DIR$/src/com/juck/list/listinterface/impl/singlyCircularLinkedList.java" />
         <option value="$PROJECT_DIR$/src/com/juck/list/Entry.java" />
+        <option value="$PROJECT_DIR$/src/com/juck/sort/QuickSort.java" />
+        <option value="$PROJECT_DIR$/src/com/juck/list/singlyCircularLinkedList.md" />
       </list>
     </option>
   </component>
@@ -237,7 +195,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="juck" type="462c0819:PsiDirectoryNode" />
               <item name="list" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="listinterface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data_structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data_structure" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="juck" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -249,7 +214,7 @@
     <property name="SearchEverywhereHistoryKey" value="Arrayde&#9;PSI&#9;JAVA://java.util.ArrayDeque&#10;deque&#9;FILE&#9;jar://D:/A_install/jdk/jdk-10.0.2/lib/src.zip!/java.base/java/util/Deque.java&#10;Stack&#9;FILE&#9;jar://D:/A_install/jdk/jdk-10.0.2/lib/src.zip!/java.base/java/util/Stack.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577511331278" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577529158178" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="D:/H_JAVA/mvn_repos/org/projectlombok/lombok/1.18.20" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -278,7 +243,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Entry">
+  <component name="RunManager" selected="Application.QuickSort">
     <configuration name="Entry" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.juck.list.Entry" />
       <module name="data_structure" />
@@ -318,12 +283,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StackLearning" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.juck.stack.StackLearning" />
+    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.juck.sort.QuickSort" />
       <module name="data_structure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.juck.stack.*" />
+          <option name="PATTERN" value="com.juck.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -345,19 +310,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.StackLearning" />
       <item itemvalue="Application.ExpressionUtil" />
       <item itemvalue="Application.InfixExpression" />
       <item itemvalue="Application.Test" />
       <item itemvalue="Application.Entry" />
+      <item itemvalue="Application.QuickSort" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.QuickSort" />
         <item itemvalue="Application.Entry" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.InfixExpression" />
         <item itemvalue="Application.ExpressionUtil" />
-        <item itemvalue="Application.StackLearning" />
       </list>
     </recent_temporary>
   </component>
@@ -381,12 +346,12 @@
       <workItem from="1573651017088" duration="13000" />
       <workItem from="1576901627165" duration="12221000" />
       <workItem from="1577443246597" duration="9646000" />
-      <workItem from="1577505380429" duration="5465000" />
+      <workItem from="1577505380429" duration="15562000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60242000" />
+    <option name="totallyTimeSpent" value="70339000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -401,7 +366,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989858" visible="true" weight="0.19168901" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989858" visible="true" weight="0.19168901" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -409,7 +374,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2851064" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2851064" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.30496454" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -417,9 +382,9 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="SonarLint" order="8" weight="0.35558584" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.33617023" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.19148937" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -527,13 +492,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/juck/sort/InsertSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/juck/stack/infixexpresstion/InfixExpression.java" />
     <entry file="file://$PROJECT_DIR$/src/com/juck/stack/infixexpresstion/ExpressionUtil.java" />
     <entry file="file://$PROJECT_DIR$/src/com/juck/stack/infixexpresstion/Operation.java" />
@@ -546,16 +504,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/juck/stack/StackLearning.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/juck/sort/Sort.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="54">
-            <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/juck/array/array.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -624,16 +572,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/juck/list/singlyCircularLinkedList.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="36">
-            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/juck/list/listinterface/List.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -661,13 +599,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/juck/sort/InsertSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/juck/sort/Sort.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="54">
+            <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/juck/list/Entry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="288">
+          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/A_install/jdk/jdk-10.0.2/lib/src.zip!/java.base/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1153">
+          <caret line="805" column="25" selection-start-line="805" selection-start-column="25" selection-end-line="805" selection-end-column="25" />
+          <folding>
+            <element signature="e#33242#33243#0" expanded="true" />
+            <element signature="e#33327#33328#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/juck/list/singlyCircularLinkedList.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="198">
+            <caret line="32" column="15" lean-forward="true" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
+            <folding>
+              <element signature="e#151#152#0" expanded="true" />
+              <element signature="e#178#179#0" expanded="true" />
+              <element signature="e#223#224#0" expanded="true" />
+              <element signature="e#255#256#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/juck/sort/QuickSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
         </state>
       </provider>
     </entry>

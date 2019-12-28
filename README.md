@@ -2,18 +2,18 @@
 
 # data_structure
 
-This project is used to record my learning process of data structure
-
-## explanations
-Dev branch is used to do development only, release branch is usable for demo.
+github 记录美好生活。
 
 ## Items
 
-### [Array](./src/com/juck/array/array.md)
+1. ### Array
 
-### [List](./src/com/juck/list/list.md)
+2. ### List
+   1. #### [singlyLinkedList](./src/com/juck/list/singlyLinkedList.md)
 
-### [Stack](./src/com/juck/Stack/stack.md)
+   2. ##### [singlyCircularLinkedList](./src/com/juck/list/singlyCircularLinkedList.md)
 
-### [Queue](./src/com/juck/Queue/queue.md)
+3. ### Stack
+
+4. ### Queue
 

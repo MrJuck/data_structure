@@ -1,28 +1,24 @@
-## 链表
+## 单向链表
 
 [TOC]
 
+### 1 数据结构
 
-
-### 1. 单向链表
-
-#### 1.1 数据结构
-
-##### 1.1.1 节点结构
+#### 1.1 节点结构
 
 每个节点中除了存储 `data` 之外还存储着下一个节点的引用 `next`。
 
-#### ![Node](./resources/Node.png)
+![Node](./resources/Node.png)
 
-##### 1.1.2  链表结构
+#### 1.2  链表结构
 
 对于空链表头指针为 `null` , 对于任意的非空链表， 如果节点 `A` 有后继节点 `B` ， 则 `A.next = B` 且 `A` 只能有 `B` 一个后继节点， 链表的最后一个节点 `C` 没有后继节点， 所以 `C.next = null`  。
 
 ![singlyLinkedList](./resources/singlyLinkedList.png)
 
-#### 1.2 代码实现
+### 2 代码实现
 
-##### 1.2.1 接口
+#### 2.1 接口
 
 ```java
 package com.juck.list.listinterface;
@@ -42,7 +38,7 @@ public interface List<E> {
 }
 ```
 
-##### 1.2.2 实现类
+#### 2.2 实现类
 
 ``` java
 public class SinglyLinkedList<E> implements List<E> {
@@ -85,9 +81,9 @@ public class SinglyLinkedList<E> implements List<E> {
 
 
 
-##### 1.2.3 方法实现
+#### 2.3 方法实现
 
-1.2.3.1 `add` 方法实现
+##### 2.3.1 `add` 方法实现
 
 ```java
 @Override
@@ -110,7 +106,7 @@ public boolean add(E e) {
 }
 ```
 
-1.2.3.2 `remove` 方法实现
+##### 2.3.2 `remove` 方法实现
 
 ``` java
 @Override
@@ -121,6 +117,8 @@ public E remove(E e) {
     if (Objects.equals(head.item, e)) { // 删除头节点
         value = head.item;
         head = head.next;
+        size--;
+        
         return value;
     }
 
@@ -129,6 +127,8 @@ public E remove(E e) {
         if (Objects.equals(current.next.item, e)) {
             value = current.next.item;
             current.next = current.next.next;
+            size--;
+            
             return value;
         }
 
@@ -139,7 +139,7 @@ public E remove(E e) {
 }
 ```
 
-##### 1.2.3.3 `print` 方法实现
+##### 2.3.3 `print` 方法实现
 
 ```java
 @Override
@@ -153,7 +153,7 @@ public void print() {
 }
 ```
 
-1.2.3.4 `contains` 方法
+##### 2.3.4 `contains` 方法
 
 此方法和 `remove` 大同小异， 不放这里了， 占地方。
 

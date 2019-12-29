@@ -47,7 +47,7 @@ public class singlyCircularLinkedList<E> implements List<E> {
     @Override
     public E remove(E e) {
         E value = null;
-        checkBoud();
+        checkBound();
 
         if (Objects.equals(head.item, e)) { // 删除头节点
             value = head.item;
@@ -126,11 +126,66 @@ public class singlyCircularLinkedList<E> implements List<E> {
         System.err.printf("%s\r\n", current.item.toString());
     }
 
-    private void checkBoud() {
+    private void checkBound() {
         if (size == 0 || Objects.isNull(head)) {
             throw new IndexOutOfBoundsException();
         }
     }
+
+    /**
+     *
+     * @param total 参与游戏的总人数
+     * @param start 从第几个人开始
+     * @param rate 数几个开始自杀
+     * @param liveNum 最终要存活几个
+     */
+    public void nJosephus(int total, int start, int rate, int liveNum) {
+        if (total < rate) {
+            throw new RuntimeException("total must be bigger than rate!");
+        }
+
+        Node<Integer> root = new Node<>(1, null);
+        root.next = root;
+        for (int i = 1; i < total; i++) { // 添加total个参与游戏的人
+            Node<Integer> newNode = new Node<>(i + 1, root);
+            Node<Integer> current = root;
+            while (!Objects.equals(current.next, root)) {
+                current = current.next;
+            }
+            current.next = newNode;
+        }
+
+        Node<Integer> first = root; // 第一个人开始报数的人， 每次报数往后移动一位
+        Node<Integer> current = first; // 永远指向报数的人的前一个， 因为正在报数的人是即将要自杀的人
+        while (current.next != root) {
+            current = current.next;
+        }
+        for (int i = 1; i < start; i++) { // 将报数的人移动到开始位置
+            first = first.next;
+            current = current.next;
+        }
+
+        while (total != liveNum) {
+            for (int i = 1; i < rate; i++) {
+                first = first.next;
+                current = current.next;
+            }
+
+            current.next = first.next; // 报数结束后 first 就是要自杀的那个人
+            System.err.printf("%d -> ", first.item);
+            first = first.next;
+            total--;
+        }
+        System.err.println();
+
+        Node<Integer> newCurrent = current;
+        while (newCurrent.next != current) {
+            System.err.printf("%d->", newCurrent.item);
+            newCurrent = newCurrent.next;
+        }
+        System.err.printf("%d", newCurrent.item);
+    }
+
 
     private static class Node<E> {
         private E item;

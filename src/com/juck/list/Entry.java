@@ -26,6 +26,8 @@ public class Entry {
         list.print();
 
         System.err.println("end test: singly circular linked list");
+        System.err.println("nJosephu: ");
+        ((singlyCircularLinkedList<Integer>) list).nJosephus(41, 1, 3, 2);
     }
 
 

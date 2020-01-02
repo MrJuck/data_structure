@@ -70,11 +70,11 @@ public class BSTree<E extends Comparable<E>> implements ITree<E> {
 
         /**
          * node to be deleted(delNode) has both left and right sub-tree,
-         * find successor node and copy context to delNode,
+         * find successor node and copy content to delNode,
          * then, delete successor from delNode's right sub-tree recursively.
          */
         Node<E> successor = findSuccessor(current); // find successor node
-        current.item = successor.item; // copy context
+        current.item = successor.item; // copy content
         current.right = doRemove(current.right, successor.item); // delete successor node from right sub-tree recursively
 
         return current;

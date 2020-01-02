@@ -13,19 +13,22 @@ public class BSTree<E extends Comparable<E>> implements ITree<E> {
         return true;
     }
 
-    private Node<E> doAdd(Node<E> parent, E e) {
+    private Node<E> doAdd(Node<E> target, E e) {
         Node<E> newNode = new Node<>(e);
-        if (Objects.isNull(parent)) {
+        if (Objects.isNull(target)) { // insert new element here
             return newNode;
         }
 
-        if (parent.item.compareTo(e) > 0) {
-            parent.left = doAdd(parent.left, e);
+        /**
+         * insert node recursively
+         */
+        if (target.item.compareTo(e) > 0) {
+            target.left = doAdd(target.left, e);
         } else {
-            parent.right = doAdd(parent.right, e);
+            target.right = doAdd(target.right, e);
         }
 
-        return parent;
+        return target;
     }
 
     @Override
@@ -101,20 +104,20 @@ public class BSTree<E extends Comparable<E>> implements ITree<E> {
         return Objects.isNull(doSearch(root, e));
     }
 
-    private Node<E> doSearch(Node<E> parent, E e) {
-        if (Objects.isNull(parent)) {
+    private Node<E> doSearch(Node<E> target, E e) {
+        if (Objects.isNull(target)) {
             return null;
         }
 
-        if (parent.item.compareTo(e) > 0) {
-            return doSearch(parent.left, e);
+        if (target.item.compareTo(e) > 0) {
+            return doSearch(target.left, e);
         }
 
-        if (parent.item.compareTo(e) < 0) {
-            return doSearch(parent.right, e);
+        if (target.item.compareTo(e) < 0) {
+            return doSearch(target.right, e);
         }
 
-        return parent;
+        return target;
     }
 
     private static class Node<E extends Comparable<E>> {

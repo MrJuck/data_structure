@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e88d8e68-1acf-4dec-b89d-46245c75e75f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/juck/tree/blog/bst.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/juck/tree/blog/bst.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/juck/tree/impl/BSTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/juck/tree/impl/BSTree.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -63,13 +63,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="14" />
-          <entry key="java" value="13307" />
+          <entry key="java" value="13412" />
           <entry key="md" value="392" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="13307" />
+          <entry key="JAVA" value="13412" />
           <entry key="Markdown" value="392" />
           <entry key="PLAIN_TEXT" value="14" />
         </counts>
@@ -81,8 +81,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/juck/tree/impl/BSTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="76" column="54" selection-start-line="76" selection-start-column="54" selection-end-line="76" selection-end-column="54" />
+            <state relative-caret-position="746">
+              <caret line="106" column="4" selection-start-line="106" selection-start-column="4" selection-end-line="120" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,8 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/juck/tree/Entry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="206">
+              <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -258,7 +258,7 @@
     <property name="SearchEverywhereHistoryKey" value="Arrayde&#9;PSI&#9;JAVA://java.util.ArrayDeque&#10;deque&#9;FILE&#9;jar://D:/A_install/jdk/jdk-10.0.2/lib/src.zip!/java.base/java/util/Deque.java&#10;Stack&#9;FILE&#9;jar://D:/A_install/jdk/jdk-10.0.2/lib/src.zip!/java.base/java/util/Stack.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577967090361" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577970685592" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.20" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -396,12 +396,12 @@
       <workItem from="1577703271779" duration="2627000" />
       <workItem from="1577789557650" duration="2940000" />
       <workItem from="1577844182915" duration="3542000" />
-      <workItem from="1577964509427" duration="2684000" />
+      <workItem from="1577964509427" duration="5101000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98630000" />
+    <option name="totallyTimeSpent" value="101047000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -432,7 +432,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="SonarLint" order="8" weight="0.35460994" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.25815603" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.27943262" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -721,15 +721,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/juck/tree/Entry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="206">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/juck/tree/impl/BSTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="76" column="54" selection-start-line="76" selection-start-column="54" selection-end-line="76" selection-end-column="54" />
+        <state relative-caret-position="746">
+          <caret line="106" column="4" selection-start-line="106" selection-start-column="4" selection-end-line="120" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

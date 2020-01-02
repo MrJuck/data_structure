@@ -133,10 +133,9 @@ public class singlyCircularLinkedList<E> implements List<E> {
     }
 
     /**
-     *
-     * @param total 参与游戏的总人数
-     * @param start 从第几个人开始
-     * @param rate 数几个开始自杀
+     * @param total   参与游戏的总人数
+     * @param start   从第几个人开始
+     * @param rate    数几个开始自杀
      * @param liveNum 最终要存活几个
      */
     public void nJosephus(int total, int start, int rate, int liveNum) {
@@ -160,7 +159,7 @@ public class singlyCircularLinkedList<E> implements List<E> {
         while (current.next != root) {
             current = current.next;
         }
-        for (int i = 1; i < start; i++) { // 将报数的人移动到开始位置
+        for (int i = 1; i < start; i++) {
             first = first.next;
             current = current.next;
         }
@@ -171,7 +170,7 @@ public class singlyCircularLinkedList<E> implements List<E> {
                 current = current.next;
             }
 
-            current.next = first.next; // 报数结束后 first 就是要自杀的那个人
+            current.next = first.next;
             System.err.printf("%d -> ", first.item);
             first = first.next;
             total--;

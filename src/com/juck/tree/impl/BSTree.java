@@ -4,17 +4,21 @@ import com.juck.tree.ITree;
 
 import java.util.Objects;
 
+
 public class BSTree<E extends Comparable<E>> implements ITree<E> {
     private Node<E> root;
 
     @Override
     public boolean add(E e) {
-        root = doAdd(root, e);
+        if (Objects.isNull(e)) {
+            throw new RuntimeException("Element to be inserted must not be null");
+        }
+
+        root = doAdd(root, new Node<>(e));
         return true;
     }
 
-    private Node<E> doAdd(Node<E> target, E e) {
-        Node<E> newNode = new Node<>(e);
+    private Node<E> doAdd(Node<E> target, Node<E> newNode) {
         if (Objects.isNull(target)) { // insert new element here
             return newNode;
         }
@@ -22,10 +26,13 @@ public class BSTree<E extends Comparable<E>> implements ITree<E> {
         /**
          * insert node recursively
          */
-        if (target.item.compareTo(e) > 0) {
-            target.left = doAdd(target.left, e);
+        if (target.item.compareTo(newNode.item) > 0) {
+            target.left = doAdd(target.left, newNode);
+        } else if (target.item.compareTo(newNode.item) < 0) {
+            target.right = doAdd(target.right, newNode);
         } else {
-            target.right = doAdd(target.right, e);
+            // same value is not allowed, so new value will replace the former one.
+            target.item = newNode.item;
         }
 
         return target;
@@ -58,8 +65,8 @@ public class BSTree<E extends Comparable<E>> implements ITree<E> {
 
     private Node<E> doDelete(Node<E> current) {
         /**
-        * node to be deleted only has left sub-tree or is leaf node
-        */
+         * node to be deleted only has left sub-tree or is leaf node
+         */
         if (current.right == null) {
             return current.left;
         }

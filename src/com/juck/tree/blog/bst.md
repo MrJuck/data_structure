@@ -48,7 +48,11 @@ public class BSTree<E extends Comparable<E>> implements ITree<E> {
     
     @Override
     public boolean add(E e) {
-        root = doAdd(root, e);
+        if (Objects.isNull(e)) {
+            throw new RuntimeException("Element to be inserted must not be null");
+        }
+
+        root = doAdd(root, new Node<>(e));
         return true;
     }
     
@@ -108,8 +112,7 @@ public class BSTree<E extends Comparable<E>> implements ITree<E> {
 &emsp;&emsp;本文使用递归来实现添加节点， 传入目标节点 `target` (新节点将会被插入到这个位置)， 只要目标节点不为空， 则对待插入的节点和目标节点比较， 如果， 目标节点大， 表示待插入节点应该在放在目标节点左子树， 否则就是放在目标节点的右子树。
 
 ```java 
-private Node<E> doAdd(Node<E> target, E e) {
-    Node<E> newNode = new Node<>(e);
+private Node<E> doAdd(Node<E> target, Node<E> newNode) {
     if (Objects.isNull(target)) { // insert new element here
         return newNode;
     }
@@ -117,10 +120,13 @@ private Node<E> doAdd(Node<E> target, E e) {
     /**
      * insert node recursively
      */
-    if (target.item.compareTo(e) > 0) {
-        target.left = doAdd(target.left, e);
+    if (target.item.compareTo(newNode.item) > 0) {
+        target.left = doAdd(target.left, newNode);
+    } else if (target.item.compareTo(newNode.item) < 0) {
+        target.right = doAdd(target.right, newNode);
     } else {
-        target.right = doAdd(target.right, e);
+        // same value is not allowed, so new value will replace the former one.
+        target.item = newNode.item; 
     }
 
     return target;

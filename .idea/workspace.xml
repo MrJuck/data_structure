@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e88d8e68-1acf-4dec-b89d-46245c75e75f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/juck/tree/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/juck/tree/Entry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/juck/tree/blog/bst.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/juck/tree/blog/bst.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/juck/tree/impl/BSTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/juck/tree/impl/BSTree.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,10 +32,11 @@
     <session id="-421934179">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="19" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.27" value="3" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.27" value="4" />
           <entry key="project.open.time.28" value="2" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.30" value="2" />
@@ -40,20 +44,20 @@
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.34" value="2" />
           <entry key="project.open.time.35" value="1" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="java" value="70" />
+          <entry key="java" value="76" />
           <entry key="md" value="19" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="70" />
+          <entry key="JAVA" value="76" />
           <entry key="Markdown" value="19" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="1" />
@@ -62,13 +66,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="14" />
-          <entry key="java" value="13412" />
+          <entry key="java" value="14135" />
           <entry key="md" value="392" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="13412" />
+          <entry key="JAVA" value="14135" />
           <entry key="Markdown" value="392" />
           <entry key="PLAIN_TEXT" value="14" />
         </counts>
@@ -77,11 +81,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/juck/tree/impl/BSTree.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/juck/tree/Entry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="92" column="5" lean-forward="true" selection-start-line="85" selection-start-column="4" selection-end-line="92" selection-end-column="5" />
+            <state relative-caret-position="270">
+              <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,20 +93,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/juck/tree/Entry.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/juck/tree/impl/AVLTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/juck/tree/ITree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+            <state relative-caret-position="223">
+              <caret line="52" column="47" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,6 +121,7 @@
       <find>remove</find>
       <find>leftMax</find>
       <find>search</find>
+      <find>BSTree.</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -159,8 +158,9 @@
         <option value="$PROJECT_DIR$/src/com/juck/list/listinterface/impl/singlyCircularLinkedList.java" />
         <option value="$PROJECT_DIR$/src/com/juck/tree/BSTree.java" />
         <option value="$PROJECT_DIR$/src/com/juck/tree/ITree.java" />
-        <option value="$PROJECT_DIR$/src/com/juck/tree/Entry.java" />
         <option value="$PROJECT_DIR$/src/com/juck/tree/impl/BSTree.java" />
+        <option value="$PROJECT_DIR$/src/com/juck/tree/Entry.java" />
+        <option value="$PROJECT_DIR$/src/com/juck/tree/impl/AVLTree.java" />
       </list>
     </option>
   </component>
@@ -176,7 +176,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1940" />
@@ -200,11 +200,43 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="PackagesPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="data_structure" type="58d84e3e:PackageViewProjectNode" />
+              <item name="data_structure" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="data_structure" type="58d84e3e:PackageViewProjectNode" />
+              <item name="data_structure" type="616d4139:PackageViewModuleNode" />
+              <item name="com.juck" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="data_structure" type="58d84e3e:PackageViewProjectNode" />
+              <item name="data_structure" type="616d4139:PackageViewModuleNode" />
+              <item name="com.juck" type="1f31426a:PackageElementNode" />
+              <item name="tree" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="data_structure" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="data_structure" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,47 +249,17 @@
               <item name="data_structure" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="data_structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data_structure" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="juck" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data_structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data_structure" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="juck" type="462c0819:PsiDirectoryNode" />
-              <item name="tree" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data_structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data_structure" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="juck" type="462c0819:PsiDirectoryNode" />
-              <item name="tree" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data_structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data_structure" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="juck" type="462c0819:PsiDirectoryNode" />
-              <item name="tree" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="Arrayde&#9;PSI&#9;JAVA://java.util.ArrayDeque&#10;deque&#9;FILE&#9;jar://D:/A_install/jdk/jdk-10.0.2/lib/src.zip!/java.base/java/util/Deque.java&#10;Stack&#9;FILE&#9;jar://D:/A_install/jdk/jdk-10.0.2/lib/src.zip!/java.base/java/util/Stack.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577970802830" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578115753409" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.20" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -395,12 +397,14 @@
       <workItem from="1577703271779" duration="2627000" />
       <workItem from="1577789557650" duration="2940000" />
       <workItem from="1577844182915" duration="3542000" />
-      <workItem from="1577964509427" duration="5342000" />
+      <workItem from="1577964509427" duration="5653000" />
+      <workItem from="1578112280512" duration="3100000" />
+      <workItem from="1578196950484" duration="1078000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101288000" />
+    <option name="totallyTimeSpent" value="105777000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -413,8 +417,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989858" visible="true" weight="0.20509383" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989858" visible="true" weight="0.21581769" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -430,7 +435,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="SonarLint" order="8" weight="0.35460994" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.27943262" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.27943262" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -653,12 +658,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="198">
             <caret line="32" column="15" lean-forward="true" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-            <folding>
-              <element signature="e#151#152#0" expanded="true" />
-              <element signature="e#178#179#0" expanded="true" />
-              <element signature="e#223#224#0" expanded="true" />
-              <element signature="e#255#256#0" expanded="true" />
-            </folding>
           </first_editor>
           <second_editor />
         </state>
@@ -676,9 +675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="29" column="63" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -710,6 +706,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/A_install/jdk/jdk-10.0.2/lib/src.zip!/jdk.internal.le/jdk/internal/jline/internal/Preconditions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/juck/tree/ITree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -717,17 +720,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/juck/tree/Entry.java">
+    <entry file="file://$PROJECT_DIR$/src/com/juck/tree/impl/BSTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        <state relative-caret-position="314">
+          <caret line="38" column="5" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/juck/tree/impl/BSTree.java">
+    <entry file="file://$PROJECT_DIR$/src/com/juck/tree/Entry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="92" column="5" lean-forward="true" selection-start-line="85" selection-start-column="4" selection-end-line="92" selection-end-column="5" />
+        <state relative-caret-position="270">
+          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/juck/tree/impl/AVLTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="52" column="47" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

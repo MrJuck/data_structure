@@ -40,7 +40,7 @@ public class BSTree<E extends Comparable<E>> implements ITree<E> {
 
     @Override
     public boolean remove(E e) {
-        if (search(e)) {
+        if (Objects.isNull(search(e))) {
             return false;
         }
 
@@ -107,8 +107,9 @@ public class BSTree<E extends Comparable<E>> implements ITree<E> {
     }
 
     @Override
-    public boolean search(E e) {
-        return Objects.isNull(doSearch(root, e));
+    public E search(E e) {
+        Node<E> result = doSearch(root, e);
+        return Objects.isNull(result) ? null : result.item;
     }
 
     private Node<E> doSearch(Node<E> target, E e) {

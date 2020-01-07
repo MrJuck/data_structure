@@ -36,7 +36,7 @@ public interface ITree<E extends Comparable<E>> {
 
     E remove(E e);
 
-    boolean search(E e);
+    E search(E e);
 }
 ```
 
@@ -60,7 +60,7 @@ public class BSTree<E extends Comparable<E>> implements ITree<E> {
 
     @Override
     public E remove(E e) {
-        if (search(e)) {
+        if (Objects.isNull(search(e))) {
             return false;
         }
 
@@ -89,8 +89,9 @@ public class BSTree<E extends Comparable<E>> implements ITree<E> {
     private Node<E> doDelete(Node<E> current) {}
 
     @Override
-    public boolean search(E e) {
-        return Objects.isNull(doSearch(root, e));
+	public E search(E e) {
+        Node<E> result = doSearch(root, e);
+        return Objects.isNull(result) ? null : result.item;
     }
     
     private static class Node<E extends Comparable<E>> {

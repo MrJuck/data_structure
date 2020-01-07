@@ -13,8 +13,13 @@ public class AVLTree<E extends Comparable<E>> implements ITree<E> {
             throw new RuntimeException("Element to be inserted must not be null");
         }
 
-        root = doAdd(root, new Node<>(e));
-        System.out.println(height(root));
+        Node<E> newNode = new Node<>(e);
+        if (Objects.isNull(root)) {
+            root = newNode;
+        } else {
+            root.add(newNode);
+        }
+
         return true;
     }
 
@@ -24,46 +29,17 @@ public class AVLTree<E extends Comparable<E>> implements ITree<E> {
     }
 
     @Override
-    public boolean search(E e) {
-        return false;
-    }
-
-    private Node<E> doAdd(Node<E> target, Node<E> newNode) {
-        if (Objects.isNull(target)) { // insert new element here
-            return newNode;
+    public E search(E e) {
+        if (Objects.isNull(e)) {
+            throw new RuntimeException("null element is not allowed!");
         }
 
-        /**
-         * insert node recursively
-         */
-        if (target.item.compareTo(newNode.item) > 0) {
-            target.left = doAdd(target.left, newNode);
-        } else if (target.item.compareTo(newNode.item) < 0) {
-            target.right = doAdd(target.right, newNode);
-        } else {
-            // same value is not allowed, so new value will replace the former one.
-            target.item = newNode.item;
-        }
-
-        return avlify(target);
-    }
-
-    private Node<E> avlify(Node<E> target) {
-        int leftHeight = height(target.left);
-        int rightHeight = height(target.right);
-
-        return target;
-    }
-
-    private int height(Node<E> root) {
         if (Objects.isNull(root)) {
-            return 0;
+            return null;
         }
 
-        int leftHeight = Objects.isNull(root.left) ? 0 : height(root.left);
-        int rightHeight = Objects.isNull(root.right) ? 0 : height(root.right);
-
-        return Math.max(leftHeight, rightHeight) + 1;
+        Node<E> result = root.search(e);
+        return Objects.isNull(result) ? null : result.item;
     }
 
     @Override
@@ -89,6 +65,99 @@ public class AVLTree<E extends Comparable<E>> implements ITree<E> {
                     ", left=" + left +
                     ", right=" + right +
                     '}';
+        }
+
+        private void add(Node<E> node) {
+            if (this.item.compareTo(node.item) > 0) {
+                if (Objects.isNull(this.left)) {
+                    this.left = node;
+                } else {
+                    this.left.add(node);
+                }
+            } else if (this.item.compareTo(node.item) < 0) {
+                if (Objects.isNull(this.right)) {
+                    this.right = node;
+                } else {
+                    this.right.add(node);
+                }
+            } else {
+                this.item = node.item;
+            }
+
+            // adjust tree to meet requirements of AVL Tree
+            this.avlTreeify();
+        }
+
+        private void avlTreeify() {
+            // calculate the balance factor of current node. the height differences between right and left sub-trees.
+            int balanceFactor = this.rightHeight() - this.leftHeight();
+
+            // if balance factor is grater than 1, it means we need
+            if (balanceFactor > 1) {
+                if (this.right.leftHeight() > this.right.rightHeight()) {
+                    this.right.rightRotate();
+                }
+                this.leftRotate();
+
+                return ;
+            }
+
+            if (balanceFactor < 1) {
+                if (this.left.rightHeight() > this.left.leftHeight()) {
+                    this.left.leftRotate();
+                }
+
+                this.rightRotate();
+            }
+        }
+
+        private Node<E> search(E e) {
+            if (this.item.equals(e)) {
+                return this;
+            }
+
+            if (this.item.compareTo(e) > 0 && Objects.nonNull(this.left)) {
+                return this.left.search(e);
+            }
+
+            if (this.item.compareTo(e) < 0 && Objects.nonNull(this.right)) {
+                return this.right.search(e);
+            }
+
+            return null;
+        }
+
+        private int leftHeight() {
+            return Objects.isNull(this.left) ? 0 : this.left.height();
+        }
+
+        private int rightHeight() {
+            return Objects.isNull(this.right) ? 0 : this.right.height();
+        }
+
+        private int height() {
+            int leftHeight = Objects.isNull(this.left) ? 0 : this.left.height();
+            int rightHeight = Objects.isNull(this.right) ? 0 : this.right.height();
+
+            return Math.max(leftHeight, rightHeight) + 1;
+        }
+
+        private void leftRotate() {
+            Node<E> newNode = new Node<>(this.item);
+            newNode.right = this.right.left;
+            newNode.left = this.left;
+            this.item = this.right.item;
+            this.right = this.right.right;
+            this.left = newNode;
+        }
+
+        private void rightRotate() {
+            Node<E> newNode = new Node<>(this.item);
+            newNode.left = this.left.right;
+            newNode.right = this.right;
+            this.item = this.left.item;
+            this.left = this.left.left;
+            this.right = newNode;
         }
     }
 }

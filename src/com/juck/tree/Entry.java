@@ -7,12 +7,16 @@ public class Entry {
     public static void main(String[] args) {
 //        bstree();
 
+        avlTree();
+    }
+
+    private static void avlTree() {
         ITree<Integer> avlTree = new AVLTree<>();
 
-        avlTree.add(1);
-        avlTree.add(2);
-        avlTree.add(3);
-        avlTree.add(4);
+        int[] data = {1, 2, 3, 4, 5};
+        for (int item : data) {
+            avlTree.add(item);
+        }
 
         System.out.println(avlTree.toString());
     }

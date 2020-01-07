@@ -5,5 +5,5 @@ public interface ITree<E extends Comparable<E>> {
 
     boolean remove(E e);
 
-    boolean search(E e);
+    E search(E e);
 }

@@ -164,12 +164,12 @@ public class AVLTree<E extends Comparable<E>> implements ITree<E> {
 
 1. RR 旋转，插入节点 **`1`** 后使得节点 **`X`** 左子树 `XL` 高度比右子树 `XR` 高度且左子树 `XL` 的左子树 `2` 高度大于左子树 `XL` 的右子树 `null` 高度。
 
-&emsp;&emsp;1. 以 `X` 节点存储的内容新建一个 `newNode` ，`Node newNode = newNode(this.item)`
-&emsp;&emsp;2. 将 `newNode` 的左孩子设置为 `X` 的左孩子的右孩子， `newNode.left = this.left.right` 
-&emsp;&emsp;3.  `newNode` 的右孩子设置为 `X` 的右孩子，`newNode.right = this.right`
-&emsp;&emsp;4. 将 `X` 节点存储的内容设置为 `X` 的左孩子的内容，`this.item = this.left.item`
-&emsp;&emsp;5. 将 `X` 节点的左孩子设置为 `X` 的左孩子的左孩子，`this.left = this.left.left`
-&emsp;&emsp;6. 将 `X` 节点的右孩子设置为 `newNode`，`this.right = newNode` 
+&emsp;&emsp;1. 以 `X` 节点存储的内容新建一个 `newNode` ，`Node newNode = newNode(this.item)` <br/>
+&emsp;&emsp;2. 将 `newNode` 的左孩子设置为 `X` 的左孩子的右孩子， `newNode.left = this.left.right`  <br/>
+&emsp;&emsp;3.  `newNode` 的右孩子设置为 `X` 的右孩子，`newNode.right = this.right` <br/>
+&emsp;&emsp;4. 将 `X` 节点存储的内容设置为 `X` 的左孩子的内容，`this.item = this.left.item` <br/>
+&emsp;&emsp;5. 将 `X` 节点的左孩子设置为 `X` 的左孩子的左孩子，`this.left = this.left.left` <br/>
+&emsp;&emsp;6. 将 `X` 节点的右孩子设置为 `newNode`，`this.right = newNode`  <br/>
 
 | 初始                                                         | 过程                                                         | 结果                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -188,12 +188,12 @@ private void rightRotate() {
 
 2. LL旋转，插入节点 **`8`** 后使得节点 **`X`** 右子树 `XR` 高度比左子树 `XL` 高度且右子树 `XR` 的右子树 `7` 高度大于右子树 `XR` 的左子树 `null` 高度。操作与RR相反
 
-&emsp;&emsp;1. 以 `X` 节点存储的内容新建一个 `newNode` ，`Node newNode = newNode(this.item)`
-&emsp;&emsp;2. 将 `newNode` 的右孩子设置为 `X` 的右孩子的左孩子， `newNode.right = this.right.left` 
-&emsp;&emsp;3.  `newNode` 的左孩子设置为 `X` 的左孩子，`newNode.left = this.left`
-&emsp;&emsp;4. 将 `X` 节点存储的内容设置为 `X` 的右孩子的内容，`this.item = this.right.item`
-&emsp;&emsp;5. 将 `X` 节点的右孩子设置为 `X` 的右孩子的右孩子，`this.right= this.right.right`
-&emsp;&emsp;6. 将 `X` 节点的左孩子设置为 `newNode`，`this.left= newNode` 
+&emsp;&emsp;1. 以 `X` 节点存储的内容新建一个 `newNode` ，`Node newNode = newNode(this.item)` <br/>
+&emsp;&emsp;2. 将 `newNode` 的右孩子设置为 `X` 的右孩子的左孩子， `newNode.right = this.right.left`  <br/>
+&emsp;&emsp;3.  `newNode` 的左孩子设置为 `X` 的左孩子，`newNode.left = this.left` <br/>
+&emsp;&emsp;4. 将 `X` 节点存储的内容设置为 `X` 的右孩子的内容，`this.item = this.right.item` <br/>
+&emsp;&emsp;5. 将 `X` 节点的右孩子设置为 `X` 的右孩子的右孩子，`this.right= this.right.right` <br/>
+&emsp;&emsp;6. 将 `X` 节点的左孩子设置为 `newNode`，`this.left= newNode`  <br/>
 
 |                             初始                             |                             过程                             |                             结果                             |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |

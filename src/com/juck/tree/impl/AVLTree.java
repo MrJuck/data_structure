@@ -89,11 +89,22 @@ public class AVLTree<E extends Comparable<E>> implements ITree<E> {
         }
 
         private void avlTreeify() {
-            // calculate the balance factor of current node. the height differences between right and left sub-trees.
+            /**
+             * calculate the balance factor of current node.
+             * the height differences between right and left sub-trees.
+             */
             int balanceFactor = this.rightHeight() - this.leftHeight();
 
-            // if balance factor is grater than 1, it means we need
+            /**
+             * case LL and RL.
+             * if balance factor is grater than 1,
+             * we need to left rotate the sub-tree rooted with this node.
+             */
             if (balanceFactor > 1) {
+                /**
+                 * if the right sub-tree's left sub-tree height is grater than it's right sub-tree height,
+                 * we need right rotate the right sub-tree rooted with this node.
+                 */
                 if (this.right.leftHeight() > this.right.rightHeight()) {
                     this.right.rightRotate();
                 }
@@ -102,6 +113,9 @@ public class AVLTree<E extends Comparable<E>> implements ITree<E> {
                 return ;
             }
 
+            /**
+             * case RR and LR
+             */
             if (balanceFactor < 1) {
                 if (this.left.rightHeight() > this.left.leftHeight()) {
                     this.left.leftRotate();
@@ -135,6 +149,11 @@ public class AVLTree<E extends Comparable<E>> implements ITree<E> {
             return Objects.isNull(this.right) ? 0 : this.right.height();
         }
 
+        /**
+         * height of the tree rooted with this node,
+         * the height is the max height of its left sub-tree height and right sub-tree height then add 1
+         * add 1: the height of this node itself
+         */
         private int height() {
             int leftHeight = Objects.isNull(this.left) ? 0 : this.left.height();
             int rightHeight = Objects.isNull(this.right) ? 0 : this.right.height();

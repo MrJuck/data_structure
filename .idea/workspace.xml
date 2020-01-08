@@ -92,8 +92,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/juck/tree/impl/AVLTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="170" column="9" lean-forward="true" selection-start-line="163" selection-start-column="8" selection-end-line="170" selection-end-column="9" />
+            <state relative-caret-position="224">
+              <caret line="121" column="17" lean-forward="true" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -405,12 +405,12 @@
       <workItem from="1578196950484" duration="5995000" />
       <workItem from="1578309428185" duration="619000" />
       <workItem from="1578393802311" duration="6539000" />
-      <workItem from="1578483522829" duration="4563000" />
+      <workItem from="1578483522829" duration="4823000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122415000" />
+    <option name="totallyTimeSpent" value="122675000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -423,6 +423,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989858" visible="true" weight="0.22386059" />
       <window_info id="Image Layers" order="1" />
@@ -759,8 +760,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/juck/tree/impl/AVLTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="170" column="9" lean-forward="true" selection-start-line="163" selection-start-column="8" selection-end-line="170" selection-end-column="9" />
+        <state relative-caret-position="224">
+          <caret line="121" column="17" lean-forward="true" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

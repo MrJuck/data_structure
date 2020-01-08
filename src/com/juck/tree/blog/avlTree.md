@@ -135,23 +135,9 @@ public class AVLTree<E extends Comparable<E>> implements ITree<E> {
             return Math.max(leftHeight, rightHeight) + 1;
         }
 
-        private void leftRotate() {
-            Node<E> newNode = new Node<>(this.item);
-            newNode.right = this.right.left;
-            newNode.left = this.left;
-            this.item = this.right.item;
-            this.right = this.right.right;
-            this.left = newNode;
-        }
+        private void leftRotate() {}
 
-        private void rightRotate() {
-            Node<E> newNode = new Node<>(this.item);
-            newNode.left = this.left.right;
-            newNode.right = this.right;
-            this.item = this.left.item;
-            this.left = this.left.left;
-            this.right = newNode;
-        }
+        private void rightRotate() {}
     }
 }
 ```

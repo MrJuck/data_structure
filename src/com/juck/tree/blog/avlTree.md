@@ -210,3 +210,47 @@ private void leftRotate() {
 }
 ```
 
+3. RL
+4. LR
+
+`avlTreeify` 方法实现:
+
+```java
+private void avlTreeify() {
+    /**
+     * calculate the balance factor of current node.
+     * the height differences between right and left sub-trees.
+     */
+    int balanceFactor = this.rightHeight() - this.leftHeight();
+
+    /**
+     * case LL and RL.
+     * if balance factor is grater than 1,
+     * we need to left rotate the sub-tree rooted with this node.
+     */
+    if (balanceFactor > 1) {
+        /**
+         * if the right sub-tree's left sub-tree height is grater than it's right sub-tree height,
+         * we need right rotate the right sub-tree rooted with this node.
+         */
+        if (this.right.leftHeight() > this.right.rightHeight()) {
+            this.right.rightRotate();
+        }
+        this.leftRotate();
+
+        return ;
+    }
+
+    /**
+     * case RR and LR
+     */
+    if (balanceFactor < 1) {
+        if (this.left.rightHeight() > this.left.leftHeight()) {
+            this.left.leftRotate();
+        }
+
+        this.rightRotate();
+    }
+}
+```
+

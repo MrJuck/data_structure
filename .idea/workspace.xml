@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e88d8e68-1acf-4dec-b89d-46245c75e75f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/juck/tree/blog/avlTree.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/juck/tree/blog/avlTree.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/juck/tree/impl/AVLTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/juck/tree/impl/AVLTree.java" afterDir="false" />
-    </list>
+    <list default="true" id="e88d8e68-1acf-4dec-b89d-46245c75e75f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -409,12 +405,12 @@
       <workItem from="1578196950484" duration="5995000" />
       <workItem from="1578309428185" duration="619000" />
       <workItem from="1578393802311" duration="6539000" />
-      <workItem from="1578483522829" duration="4303000" />
+      <workItem from="1578483522829" duration="4563000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122155000" />
+    <option name="totallyTimeSpent" value="122415000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -427,7 +423,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989858" visible="true" weight="0.22386059" />
       <window_info id="Image Layers" order="1" />
